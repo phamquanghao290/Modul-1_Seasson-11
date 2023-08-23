@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let N;
+            do {
+                N = parseInt(prompt("Nhập số nguyên N (2 đến 100):"));
+            } while (Number.isNaN(N) || N < 2 || N > 100);
+                console.log(`Bình phương của các số chia hết cho 2 từ 2 đến ${N}:`);
+            for (let i = 2; i <= N; i += 2) {
+                let a = i * i;
+                console.log(`${i} ^ 2 = ${a}`);
+            }
+
+    </script>
+</body>
+</html>

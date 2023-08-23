@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+            While:
+            - break dùng để thoát khỏi vòng lặp while
+            - Có thể không chạy lần nào nếu điều kiện sai (falsy)
+            - falsy: false, NaN, null, undefine,0,"",''
+         -->
+    <script>
+        let number= prompt("bạn phải nhập 123");
+        while (number != "123"){
+            number = prompt("bạn phải nhập 123");
+        }
+        console.log("ok!");
+    </script>
+</body>
+</html>

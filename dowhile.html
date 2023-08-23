@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        - dowhile: chạy ít nhất 1 lần, khi nào điều kiện sai thì dừng
+        - break: dùng để thoát khỏi vòng lặp
+     -->
+     <script>
+        let i=0
+        let a
+        do{
+            a = prompt("nhập dãy số 123456:");
+            i++;
+            if(a===123456){
+                console.log("Đã nhập đúng!");
+                break;
+            } else{
+                console.log(`Bạn đã nhập sai lần thứ ${i}, vui lòng thử lại`);
+            }
+        }
+        while(i<3)
+        console.log("Bạn đã hết lần nhập");
+     </script>
+</body>
+</html>
